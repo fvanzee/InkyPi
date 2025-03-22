@@ -46,5 +46,10 @@
         "display_name": "Calendar",
         "id": "calendar",
         "class": "Calendar"
+    },
+    {
+        "display_name": "XKCD",
+        "id": "xkcd",
+        "class": "XKCD"
     }
 ]
