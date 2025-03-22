@@ -18,7 +18,9 @@
         "display_name": "Today's Newspaper",
         "id": "newspaper",
         "class": "Newspaper",
-        "image_settings": ["keep-width"]
+        "image_settings": [
+            "keep-width"
+        ]
     },
     {
         "display_name": "Clock",
@@ -29,5 +31,10 @@
         "display_name": "Weather",
         "id": "weather",
         "class": "Weather"
+    },
+    {
+        "display_name": "Buienradar",
+        "id": "buienradar",
+        "class": "Buienradar"
     }
 ]
