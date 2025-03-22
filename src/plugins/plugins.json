@@ -36,5 +36,10 @@
         "display_name": "Buienradar",
         "id": "buienradar",
         "class": "Buienradar"
+    },
+    {
+        "display_name": "Days Until Christmas",
+        "id": "days_until_christmas",
+        "class": "DaysUntilChristmas"
     }
 ]
