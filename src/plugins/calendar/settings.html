@@ -1,0 +1,18 @@
+<div class="form-group">
+    <div class="form-group nowrap">
+        <label for="account" class="form-label">Calendar Account:</label>
+        <input type="text" id="account" name="account" placeholder="foo@gmail.com" required class="form-input">
+    </div>
+
+</div>
+
+<script>
+
+    // populate form values from plugin settings
+    document.addEventListener('DOMContentLoaded', () => {
+        if (loadPluginSettings) {
+            // Populate text inputs
+            document.getElementById('account').value = pluginSettings.account || '';
+        }
+    });
+</script>
