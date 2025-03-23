@@ -37,7 +37,7 @@ class Calendar(BasePlugin):
         events_result = service.events().list(
             calendarId=account,
             timeMin=now,
-            maxResults=10,
+            maxResults=3,
             singleEvents=True,
             orderBy="startTime"
         ).execute()

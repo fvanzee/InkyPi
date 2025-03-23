@@ -2,13 +2,12 @@
 
 {% block content %}
 <div class="container">
-    <h1>Upcoming Events</h1>
     {% if events %}
     {% for event in events %}
     <div class="event">
         <strong>{{ event.summary }}</strong>
         <div class="date">
-            {{ event.start.dateTime if event.start.dateTime else event.start.date }}
+            {{ event.start.date }}
         </div>
     </div>
     {% endfor %}
