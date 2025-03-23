@@ -41,4 +41,16 @@ class Calendar(BasePlugin):
             singleEvents=True,
             orderBy="startTime"
         ).execute()
-        return events_result.get("items", [])
+        
+        events = events_result.get("items", [])
+
+        # Convert event dateTime strings to Python datetime objects
+        for event in events:
+            start_time = event["start"].get("dateTime", event["start"].get("date"))
+            if "T" in start_time:  # If it's a full datetime
+                event["start"]["parsed"] = datetime.fromisoformat(start_time).strftime("%A, %B %d, %Y at %I:%M %p")
+            else:  # If it's an all-day event
+                event["start"]["parsed"] = datetime.strptime(start_time, "%Y-%m-%d").strftime("%A, %B %d, %Y")
+
+        return events
+
