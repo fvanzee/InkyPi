@@ -15,7 +15,7 @@ class DaysUntilChristmas(BasePlugin):
     def generate_image(self, settings, device_config):
 
         image_template_params = {
-            "title": "Days Until Christmas",
+            "title": "🎄 Days Until Christmas 🎄",
             "content": self.get_days_until_christmas(),
             "plugin_settings": settings
         }

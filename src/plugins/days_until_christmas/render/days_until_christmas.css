@@ -23,7 +23,7 @@
   max-width: 100%;
   max-height: 80%;
   font-weight: 200;
-  font-size: min(20cqh, 5cqi);
+  font-size: min(40cqh, 10cqi);
   white-space: pre-line;
   overflow: hidden;
 }
