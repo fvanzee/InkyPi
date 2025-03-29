@@ -51,5 +51,10 @@
         "display_name": "XKCD",
         "id": "xkcd",
         "class": "XKCD"
+    },
+    {
+        "display_name": "Screenshot",
+        "id": "screenshot",
+        "class": "Screenshot"
     }
 ]
